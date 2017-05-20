@@ -22,4 +22,4 @@ docker run --name try-elm -d -p 8000:8000 jordymoos/try-elm
 ```
 
 The container can take a minute to initialize.
-After that go to `http://localhost:8000/try`
+After that go to http://localhost:8000/try
