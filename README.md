@@ -14,6 +14,10 @@ The container can be started issuing the following command
 docker run --name try-elm -p 8000:8000 jordymoos/try-elm
 ```
 
+The container can take a minute to initialize.
+After that go to http://localhost:8000/try
+
+
 # Build
 
 ```
@@ -21,10 +25,6 @@ git clone https://github.com/JordyMoos/try-elm-docker
 cd try-elm-docker
 docker build -t jordymoos/try-elm .
 ```
-
-
-The container can take a minute to initialize.
-After that go to http://localhost:8000/try
 
 
 #### Or use docker compose
