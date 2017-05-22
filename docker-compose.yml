@@ -1,7 +1,12 @@
-version: "2"
+version: "2.1"
 
 services:
   try-elm:
     image: jordymoos/try-elm
     ports:
       - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000"]
+      interval: 10s
+      timeout: 10s
+      retries: 6
